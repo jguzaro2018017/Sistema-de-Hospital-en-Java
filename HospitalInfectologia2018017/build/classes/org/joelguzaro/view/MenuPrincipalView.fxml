@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.joelguzaro.controller.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="538.0" fitWidth="798.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/1539192188133.jpg" />
+         </image>
+      </ImageView>
+      <MenuBar layoutX="586.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Modulos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaPacientes" text="Pacientes" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaMedicos" text="Medicos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaEspecialidades" text="Especialidades" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaCargos" text="Cargos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTelefonoMedico" text="Telefonos Medicos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTelefonosPacientes" text="Telefonos Pacientes" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaEspecialidades" text="Especialidades" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaAreas" text="Areas" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Reportes">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Reporte Citas" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Acerca de">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaPerfil" text="Programador" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

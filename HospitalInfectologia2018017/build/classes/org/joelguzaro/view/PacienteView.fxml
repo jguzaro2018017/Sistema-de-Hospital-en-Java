@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="706.0" prefWidth="1123.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.joelguzaro.controller.PacienteController">
+   <children>
+      <Label layoutX="529.0" layoutY="26.0" text="Pacientes">
+         <font>
+            <Font name="Britannic Bold" size="33.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="95.0" text="DPI">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="1.0" color="#f29501" height="255.0" radius="127.0" width="255.0" />
+         </effect>
+      </Label>
+      <Label layoutX="60.0" layoutY="144.0" text="Nombres">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="1.0" color="#f29501" height="255.0" radius="127.0" width="255.0" />
+         </effect>
+      </Label>
+      <Label layoutX="59.0" layoutY="194.0" text="Apellidos">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="1.0" color="#f29501" height="255.0" radius="127.0" width="255.0" />
+         </effect>
+      </Label>
+      <Label layoutX="59.0" layoutY="247.0" text="Fecha Nacimiento">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="1.0" color="#f29501" height="255.0" radius="127.0" width="255.0" />
+         </effect>
+      </Label>
+      <Label layoutX="60.0" layoutY="300.0" text="Direccion">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="1.0" color="#f29501" height="255.0" radius="127.0" width="255.0" />
+         </effect>
+      </Label>
+      <Label layoutX="557.0" layoutY="300.0" text="Ocupacion">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="1.0" color="#f29501" height="255.0" radius="127.0" width="255.0" />
+         </effect>
+      </Label>
+      <Label layoutX="424.0" layoutY="247.0" text="Sexo">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="1.0" color="#f29501" height="255.0" radius="127.0" width="255.0" />
+         </effect>
+      </Label>
+      <TextField editable="false" layoutX="221.0" layoutY="85.0" prefHeight="38.0" prefWidth="207.0">
+         <effect>
+            <InnerShadow color="#032b7c" />
+         </effect>
+      </TextField>
+      <TextField editable="false" layoutX="222.0" layoutY="134.0" prefHeight="38.0" prefWidth="442.0">
+         <effect>
+            <InnerShadow color="#032b7c" />
+         </effect>
+      </TextField>
+      <TextField editable="false" layoutX="222.0" layoutY="184.0" prefHeight="38.0" prefWidth="442.0">
+         <effect>
+            <InnerShadow color="#032b7c" />
+         </effect>
+      </TextField>
+      <TextField editable="false" layoutX="222.0" layoutY="237.0" prefHeight="38.0" prefWidth="153.0">
+         <effect>
+            <InnerShadow color="#032b7c" />
+         </effect>
+      </TextField>
+      <TextField editable="false" layoutX="223.0" layoutY="290.0" prefHeight="38.0" prefWidth="305.0">
+         <effect>
+            <InnerShadow color="#032b7c" />
+         </effect>
+      </TextField>
+      <TextField editable="false" layoutX="684.0" layoutY="290.0" prefHeight="38.0" prefWidth="305.0">
+         <effect>
+            <InnerShadow color="#032b7c" />
+         </effect>
+      </TextField>
+      <TextField editable="false" layoutX="513.0" layoutY="237.0" prefHeight="38.0" prefWidth="171.0">
+         <effect>
+            <InnerShadow color="#032b7c" />
+         </effect>
+      </TextField>
+      <TableView layoutX="222.0" layoutY="345.0" prefHeight="339.0" prefWidth="728.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+         <effect>
+            <InnerShadow choke="0.33" color="#032b7c" height="50.65" radius="26.307499999999997" width="56.58" />
+         </effect>
+      </TableView>
+      <ImageView fitHeight="128.0" fitWidth="114.0" layoutX="1009.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Home.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

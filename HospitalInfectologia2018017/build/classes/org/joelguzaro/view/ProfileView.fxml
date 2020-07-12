@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.joelguzaro.controller.PerfilController">
+   <children>
+      <ImageView fitHeight="210.0" fitWidth="192.0" layoutX="61.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Profile.png" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ImageView>
+      <Label layoutX="324.0" layoutY="61.0" text="Nombre">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="324.0" layoutY="128.0" text="Codigo Tecnico">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="324.0" layoutY="192.0" text="Carné">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="324.0" layoutY="262.0" text="Correo">
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="346.0" layoutY="87.0" text="Joel Alexander Guzaro Tzunun">
+         <font>
+            <Font name="Britannic Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="347.0" layoutY="151.0" text="IN5AM">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="345.0" layoutY="215.0" text="2018017">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="348.0" layoutY="288.0" text="jguzaro-201817@kinal.edu.gt">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="53.0" fitWidth="98.0" layoutX="533.0" layoutY="333.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/regresar.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

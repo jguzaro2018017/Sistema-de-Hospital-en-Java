@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.joelguzaro.controller.TelefonoPacienteController">
+   <children>
+      <Label layoutX="241.0" layoutY="14.0" text="Telefonos Pacientes">
+         <font>
+            <Font name="Britannic Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="90.0" text="Nombres">
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="1.0" color="#f29501" height="255.0" radius="127.0" width="255.0" />
+         </effect>
+      </Label>
+      <Label layoutX="69.0" layoutY="146.0" text="Apellidos">
+         <effect>
+            <InnerShadow choke="1.0" color="#f29501" height="255.0" radius="127.0" width="255.0" />
+         </effect>
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="205.0" text="Numero Contacto">
+         <effect>
+            <InnerShadow choke="1.0" color="#f29501" height="255.0" radius="127.0" width="255.0" />
+         </effect>
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="257.0" text="Codigo Paciente">
+         <effect>
+            <InnerShadow choke="1.0" color="#f29501" height="255.0" radius="127.0" width="255.0" />
+         </effect>
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField editable="false" layoutX="248.0" layoutY="80.0" prefHeight="38.0" prefWidth="281.0">
+         <effect>
+            <InnerShadow color="#032b7c" />
+         </effect>
+      </TextField>
+      <TextField editable="false" layoutX="248.0" layoutY="136.0" prefHeight="38.0" prefWidth="281.0">
+         <effect>
+            <InnerShadow color="#032b7c" />
+         </effect>
+      </TextField>
+      <TextField editable="false" layoutX="248.0" layoutY="195.0" prefHeight="38.0" prefWidth="281.0">
+         <effect>
+            <InnerShadow color="#032b7c" />
+         </effect>
+      </TextField>
+      <ComboBox layoutX="248.0" layoutY="249.0" prefHeight="34.0" prefWidth="190.0">
+         <effect>
+            <InnerShadow color="#043161" />
+         </effect>
+      </ComboBox>
+      <TableView layoutX="95.0" layoutY="300.0" prefHeight="200.0" prefWidth="546.0">
+        <columns>
+          <TableColumn prefWidth="155.0" text="Nombres" />
+          <TableColumn prefWidth="158.0" text="Apellidos" />
+            <TableColumn prefWidth="124.0" text="Numero Contacto" />
+            <TableColumn prefWidth="108.0" text="Codigo Paciente" />
+        </columns>
+         <effect>
+            <InnerShadow choke="0.28" color="#032b7c" height="41.76" radius="21.862499999999997" width="47.69" />
+         </effect>
+      </TableView>
+      <ImageView fitHeight="92.0" fitWidth="98.0" layoutX="648.0" layoutY="-2.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Home.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

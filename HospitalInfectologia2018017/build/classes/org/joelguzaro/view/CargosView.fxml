@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="499.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.joelguzaro.controller.CargosController">
+   <children>
+      <Label layoutX="203.0" layoutY="20.0" text="Cargos">
+         <font>
+            <Font name="Britannic Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="99.0" text="Codigo Cargo">
+         <effect>
+            <InnerShadow choke="1.0" color="#f29501" height="255.0" radius="127.0" width="255.0" />
+         </effect>
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="141.0" text="Nombre Cargo">
+         <effect>
+            <InnerShadow choke="1.0" color="#f29501" height="255.0" radius="127.0" width="255.0" />
+         </effect>
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="207.0" layoutY="95.0" prefHeight="25.0" prefWidth="184.0">
+         <effect>
+            <InnerShadow color="#032b7c" />
+         </effect>
+      </TextField>
+      <TextField layoutX="207.0" layoutY="137.0" prefHeight="25.0" prefWidth="191.0">
+         <effect>
+            <InnerShadow color="#032b7c" />
+         </effect>
+      </TextField>
+      <TableView layoutX="150.0" layoutY="185.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="97.0" text="Codigo Cargo" />
+          <TableColumn prefWidth="102.0" text="Nombre Cargo" />
+        </columns>
+         <effect>
+            <InnerShadow choke="0.12" color="#032b7c" height="35.83" radius="18.155" width="38.79" />
+         </effect>
+      </TableView>
+      <ImageView fitHeight="72.0" fitWidth="88.0" layoutX="411.0" layoutY="321.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Home.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

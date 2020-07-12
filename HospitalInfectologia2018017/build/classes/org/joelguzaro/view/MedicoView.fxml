@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="719.0" prefWidth="972.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.joelguzaro.controller.MedicoController">
+   <children>
+      <ImageView fitHeight="107.0" fitWidth="125.0" layoutX="865.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Home.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="352.0" layoutY="14.0" text="Medicos">
+         <font>
+            <Font name="Britannic Bold" size="46.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="73.0" layoutY="258.0" prefHeight="90.0" prefWidth="675.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="128.0" minWidth="10.0" prefWidth="115.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="112.0" minWidth="10.0" prefWidth="111.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="98.0" text="Hora Entrada">
+               <effect>
+                  <InnerShadow choke="1.0" color="#f29501" height="255.0" radius="127.0" width="255.0" />
+               </effect>
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font></Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="100.0" text="Hora Salida" GridPane.columnIndex="2">
+               <effect>
+                  <InnerShadow choke="1.0" color="#f29501" height="255.0" radius="127.0" width="255.0" />
+               </effect>
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font></Label>
+            <Label alignment="TOP_CENTER" prefHeight="17.0" prefWidth="99.0" text="Turno Maximo" GridPane.columnIndex="4">
+               <effect>
+                  <InnerShadow choke="1.0" color="#f29501" height="255.0" radius="127.0" width="255.0" />
+               </effect>
+               <font>
+                  <Font name="Britannic Bold" size="15.0" />
+               </font></Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="101.0" text="Sexo" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <effect>
+                  <InnerShadow choke="1.0" color="#f29501" height="255.0" radius="127.0" width="255.0" />
+               </effect>
+               <font>
+                  <Font name="Britannic Bold" size="18.0" />
+               </font></Label>
+            <TextField fx:id="txtHoraEntrada" editable="false" prefHeight="38.0" prefWidth="281.0" GridPane.columnIndex="1">
+               <effect>
+                  <InnerShadow color="#032b7c" />
+               </effect>
+            </TextField>
+            <TextField fx:id="txtHoraSalida" editable="false" prefHeight="38.0" prefWidth="281.0" GridPane.columnIndex="3">
+               <effect>
+                  <InnerShadow color="#032b7c" />
+               </effect>
+            </TextField>
+            <TextField fx:id="txtTurnoMaximo" editable="false" prefHeight="38.0" prefWidth="281.0" GridPane.columnIndex="5">
+               <effect>
+                  <InnerShadow color="#032b7c" />
+               </effect>
+            </TextField>
+            <TextField fx:id="txtSexo" editable="false" prefHeight="38.0" prefWidth="281.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <effect>
+                  <InnerShadow color="#032b7c" />
+               </effect>
+            </TextField>
+         </children>
+      </GridPane>
+      <TableView fx:id="tblMedicos" layoutX="13.0" layoutY="385.0" prefHeight="229.0" prefWidth="947.0">
+        <columns>
+          <TableColumn fx:id="colCodigoMedico" prefWidth="100.0" text="Codigo Medico" />
+          <TableColumn fx:id="colLicenciaMedica" prefWidth="165.0" text="Licencia Medica" />
+            <TableColumn fx:id="colNombres" prefWidth="148.0" text="Nombres" />
+            <TableColumn fx:id="colApellidos" minWidth="4.0" prefWidth="127.0" text="Apellidos" />
+            <TableColumn fx:id="colEntrada" minWidth="0.0" prefWidth="101.0" text="Hora Entrada" />
+            <TableColumn fx:id="colSalida" minWidth="8.0" prefWidth="123.0" text="Hora Salida" />
+            <TableColumn fx:id="colTurno" prefWidth="100.0" text="Turno Maximo" />
+            <TableColumn fx:id="colSexo" prefWidth="93.0" text="Sexo" />
+            <TableColumn prefWidth="88.0" text="Sexo" />
+        </columns>
+         <effect>
+            <InnerShadow choke="0.14" color="#032b7c" height="56.58" radius="25.5675" width="47.69" />
+         </effect>
+      </TableView>
+      <Button fx:id="btnNuevo" layoutX="73.0" layoutY="646.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="59.0" text="Nuevo" />
+      <Button fx:id="btnEliminar" layoutX="145.0" layoutY="646.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="59.0" text="Eliminar" />
+      <Button fx:id="btnEditar" layoutX="223.0" layoutY="646.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="59.0" text="Editar" />
+      <Button fx:id="btnReporte" layoutX="293.0" layoutY="646.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="59.0" text="Reporte" />
+      <Label layoutX="91.0" layoutY="99.0" text="Licencia Medica">
+         <cursor>
+            <Cursor fx:constant="DISAPPEAR" />
+         </cursor>
+         <effect>
+            <InnerShadow choke="1.0" color="#f29501" height="255.0" radius="127.0" width="255.0" />
+         </effect>
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="154.0" text="Nombres">
+         <effect>
+            <InnerShadow choke="1.0" color="#f29501" height="255.0" radius="127.0" width="255.0" />
+         </effect>
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="211.0" text="Apellidos">
+         <effect>
+            <InnerShadow choke="1.0" color="#f29501" height="255.0" radius="127.0" width="255.0" />
+         </effect>
+         <font>
+            <Font name="Britannic Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtLicenciaMedica" editable="false" layoutX="247.0" layoutY="89.0" prefHeight="38.0" prefWidth="281.0">
+         <effect>
+            <InnerShadow color="#032b7c" />
+         </effect>
+      </TextField>
+      <TextField fx:id="txtNombres" editable="false" layoutX="247.0" layoutY="144.0" prefHeight="38.0" prefWidth="442.0">
+         <effect>
+            <InnerShadow color="#032b7c" />
+         </effect>
+      </TextField>
+      <TextField fx:id="txtApellidos" editable="false" layoutX="247.0" layoutY="201.0" prefHeight="38.0" prefWidth="442.0">
+         <effect>
+            <InnerShadow color="#032b7c" />
+         </effect>
+      </TextField>
+   </children>
+</AnchorPane>

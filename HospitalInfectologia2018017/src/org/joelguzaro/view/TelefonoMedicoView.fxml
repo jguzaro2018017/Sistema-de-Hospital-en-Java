@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.joelguzaro.controller.TelefonoMedicoController">
+   <children>
+      <Label layoutX="181.0" layoutY="28.0" text="Telefonos Medicos">
+         <font>
+            <Font name="Cambria Math" size="30.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Label layoutX="52.0" layoutY="83.0" text="Telefono Personal">
+         <font>
+            <Font name="Eras Bold ITC" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="1.0" color="#f29501" height="255.0" radius="127.0" width="255.0" />
+         </effect>
+      </Label>
+      <Label layoutX="52.0" layoutY="127.0" text="Codigo Medico">
+         <font>
+            <Font name="Eras Bold ITC" size="15.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="1.0" color="#f29501" height="255.0" radius="127.0" width="255.0" />
+         </effect>
+      </Label>
+      <ComboBox layoutX="254.0" layoutY="124.0" prefHeight="34.0" prefWidth="190.0">
+         <effect>
+            <InnerShadow color="#043161" />
+         </effect>
+      </ComboBox>
+      <TextField layoutX="255.0" layoutY="80.0" prefHeight="34.0" prefWidth="190.0">
+         <effect>
+            <InnerShadow color="#043161" />
+         </effect>
+      </TextField>
+      <TableView layoutX="194.0" layoutY="200.0" prefHeight="152.0" prefWidth="212.0">
+        <columns>
+          <TableColumn prefWidth="113.0" text="Telefono Personal" />
+          <TableColumn prefWidth="98.0" text="CodigoMedico" />
+        </columns>
+         <effect>
+            <InnerShadow color="#043161" />
+         </effect>
+      </TableView>
+      <ImageView fitHeight="76.0" fitWidth="83.0" layoutX="524.0" layoutY="324.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Home.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
